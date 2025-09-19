@@ -34,40 +34,86 @@
         </section>
 
         <section id="servicios" class="features">
-            <div class="container">
+            <canvas id="particle-canvas-features"></canvas>
+            <div class="features-content">
+                <div class="container">
                 <h3 class="section-title">Nuestras Soluciones</h3>
                 <div class="features-grid">
-                    <div class="feature-card animate-on-scroll">
+                    <div class="feature-card animate-on-scroll" style="transition-delay: 100ms">
                         <div class="feature-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+                            <img src="imagenes/cli.png" alt="CLI">
                         </div>
-                        <h4>Modelos de Machine Learning</h4>
-                        <p>Diseñamos y entrenamos modelos predictivos y generativos para potenciar tus datos.</p>
+                        <h4>CLI (Command Line Interface)</h4>
+                        <p>Usar una IA (u otro programa) desde la consola escribiendo comandos en lugar de abrir una app con botones.</p>
                     </div>
-                    <div class="feature-card animate-on-scroll">
+                    <div class="feature-card animate-on-scroll" style="transition-delay: 200ms">
                         <div class="feature-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="M9 9v6h6"/><path d="M15 9l-6 6"/></svg>
+                            <img src="imagenes/claude.jpg" alt="Claude CLI">
                         </div>
-                        <h4>Procesamiento de Datos y MLOps</h4>
-                        <p>Infraestructura robusta para el ciclo de vida completo de tus modelos de IA.</p>
+                        <h4>Claude CLI</h4>
+                        <p>Aprovechamos la potencia del modelo de lenguaje de Anthropic a través de interfaces de línea de comandos para tareas complejas.</p>
                     </div>
-                    <div class="feature-card animate-on-scroll">
+                    <div class="feature-card animate-on-scroll" style="transition-delay: 300ms">
                         <div class="feature-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m10 8 4 4-4 4"/></svg>
+                            <img src="imagenes/gemini.png" alt="Gemini CLI">
                         </div>
-                        <h4>Consultoría Estratégica en IA</h4>
-                        <p>Te guiamos en la adopción e integración de la IA para maximizar tu retorno de inversión.</p>
+                        <h4>Gemini CLI</h4>
+                        <p>Integramos el modelo multimodal de Google en herramientas de línea de comandos para potenciar tus flujos de trabajo.</p>
+                    </div>
+                    <div class="feature-card animate-on-scroll" style="transition-delay: 400ms">
+                        <div class="feature-icon">
+                            <img src="imagenes/codex.jpg" alt="Codex CLI">
+                        </div>
+                        <h4>Codex CLI</h4>
+                        <p>Utilizamos el modelo de generación de código de OpenAI para crear herramientas de desarrollo asistido por IA en la terminal.</p>
+                    </div>
+                    <div class="feature-card animate-on-scroll" style="transition-delay: 100ms">
+                        <div class="feature-icon">
+                            <img src="imagenes/computervision.jpg" alt="Visión por Computadora">
+                        </div>
+                        <h4>Computer Vision</h4>
+                        <p>Es que la computadora pueda ver e interpretar imágenes y videos, como si tuviera “ojos digitales”.</p>
+                    </div>
+                    <div class="feature-card animate-on-scroll" style="transition-delay: 200ms">
+                        <div class="feature-icon">
+                            <img src="imagenes/pose.png" alt="Estimación de Pose">
+                        </div>
+                        <h4>Pose Estimation</h4>
+                        <p>Es cuando la IA detecta a la persona completa y mapea su cuerpo con puntos (hombros, rodillas, codos, etc.), para saber cómo está posada o moviéndose.</p>
+                    </div>
+                    <div class="feature-card animate-on-scroll" style="transition-delay: 300ms">
+                        <div class="feature-icon">
+                            <img src="imagenes/hand.png" alt="Seguimiento de Manos">
+                        </div>
+                        <h4>Hand Tracking</h4>
+                        <p>Es un caso específico donde la IA detecta la mano y cada dedo, siguiendo sus movimientos y gestos (✌️, 👍, ✊).</p>
+                    </div>
+                    <div class="feature-card animate-on-scroll" style="transition-delay: 400ms">
+                        <div class="feature-icon">
+                            <img src="imagenes/deteccion.jpg" alt="Detección de Objetos">
+                        </div>
+                        <h4>Detección de Objetos</h4>
+                        <p>Identificamos y localizamos objetos específicos dentro de una imagen o video, como vehículos, personas o productos.</p>
+                    </div>
+                    <div class="feature-card animate-on-scroll" style="transition-delay: 100ms">
+                        <div class="feature-icon">
+                            <img src="imagenes/modelos.png" alt="Modelos de Detección">
+                        </div>
+                        <h4>Modelos de Detección</h4>
+                        <p>Trabajamos con arquitecturas de vanguardia como YOLO, SSD, Faster R-CNN y Transformers para una detección precisa y eficiente.</p>
+                    </div>
+                    <div class="feature-card animate-on-scroll" style="transition-delay: 200ms">
+                        <div class="feature-icon">
+                            <img src="imagenes/github.png" alt="GitHub Pages">
+                        </div>
+                        <h4>GitHub Pages</h4>
+                        <p>Desplegamos sitios web estáticos directamente desde tus repositorios de GitHub, ideal para documentación y páginas de proyectos.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="nosotros" class="about">
-            <div class="container animate-on-scroll">
-                <h3 class="section-title">Sobre Orbital Lab</h3>
-                <p>Somos un laboratorio de innovación compuesto por científicos de datos, ingenieros de IA y estrategas de producto. Nuestra misión es hacer que la inteligencia artificial sea accesible y transformadora para empresas de todos los tamaños.</p>
-            </div>
-        </section>
+
 
     </main>
 

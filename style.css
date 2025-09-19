@@ -177,7 +177,10 @@ body {
     box-shadow: var(--shadow);
     border: 1px solid var(--border-color);
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    background-size: 200% 200%;
+    background-position: 0% 50%;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, background-position 0.8s ease;
 }
 
 .feature-card:hover {
@@ -192,6 +195,12 @@ body {
 
 .feature-icon svg {
     stroke-width: 1.5; /* Thinner lines for a more refined look */
+}
+
+.feature-icon img {
+    height: 48px;
+    width: auto;
+    border-radius: 8px; /* Add a slight rounding to the images */
 }
 
 .feature-card h4 {
@@ -274,4 +283,21 @@ body {
     top: 0;
     left: 0;
     z-index: 1;
+}
+
+#particle-canvas-features {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0; /* Behind the cards */
+}
+eight: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0; /* Behind the cards */
+}
+;
+    z-index: 0; /* Behind the cards */
 }
